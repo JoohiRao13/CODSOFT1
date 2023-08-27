@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar  */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:absolute;
+     top:-31px;
+}
+
+#strip{
+    margin: 71px 35px;
+}
+#strip img{
+    margin: -13px -46px;
+    height:56px;
+}
+
+#navbar{
+    position:relative;
+}
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: rgb(2, 1, 65);
+    position:absolute;
+    height:47%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.8;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(224, 249, 255);
+    font:oblique;
+    display: block;
+    padding: 1px 19px;
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+    height: 26px;
+    width: 118px;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul li a:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(225, 237, 238);
+    border-radius: 20px;
+}
+/* animation in strip  */
+.box1 {
+    background-color: rgb(171, 205, 206);
+    width: 25px;
+    height: 25px;
+    position: relative;
+    animation-name: ha1;
+    animation-name: ha2;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-direction:alternate-reverse;
+    }
+
+  @keyframes ha1 {
+    from {
+      width: 20px;
+    }
+    to {
+      width: 100px;
+    }
+  }
+@keyframes ha2{
+      0%{
+          top:0px;
+          left:0px;
+      }
+      25%{
+          top:25px;
+          left:0px;
+      }
+      75%{
+          top:25px;
+          left:50px;
+      }
+      100%{
+          top:0px;
+          left:50px;
+      }
+  }
+
+  /* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background-color: rgb(229 251 255);
+    position:absolute;
+    height:47%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+}
+#home h1{
+    color: rgb(6, 26, 43);
+    display: block;
+    position: inherit;
+    text-align: justify;
+    width: -webkit-fill-available;
+    justify-items: left;
+    font-size: 2.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: left;
+    align-items: left;
+    padding: -12px;
+    margin: -161px;
+    }
+
+#home p{
+    color: rgb(46, 71, 100);
+    text-align: end;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 265px;
+    justify-items: left;
+    justify-content: end;
+    font-family:fantasy;
+    margin: 81px;
+    padding: 15px;
+    width: 625px;
+    text-align: right; 
+}
+
+.img{
+    display: flex;
+    position: initial;
+    width: 101%;
+    height: 27%;
+    padding: 12px;
+    margin: 7px;
+    top: 80px;
+    justify-content: end;
+    justify-items: center;
+    
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.2rem;
+    font: caption;
+    padding: 11px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    top: 800px;
+    width: 367px;
+    text-align: right;
+    color:#784500;
+}
+
+.h-prim1{
+    justify-content: center;
+    align-items: center;
+    color: rgb(244, 255, 255);
+    
+    background: url('https://media.istockphoto.com/id/1411029939/photo/top-view-on-colorful-stacked-books-education-and-learning-concept-background.jpg?s=1024x1024&w=is&k=20&c=_CWMq9RS-uzK0oAGpHDA_4BSez_JlA2IYG3zPGZmX4w=');
+    bottom:800px;
+    height:78px;
+    position: relative;
+    top: 76px;
+    width:100%;
+    text-align: center;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding:0px;
+}
+.center{
+    text-align: center;
+}
+/* services section  */
+
+.box{
+    background-color: rgb(171, 205, 206);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#services{
+    margin:34px;
+    display:flex;
+}
+
+#services .box{
+    border: 4px solid rgb(197, 183, 157);
+    text-shadow:3px 2px ghostwhite ;
+    box-shadow: 7px 5px 100px #73d173;
+    padding: 2px;
+    margin: 5px 21px;
+    border-radius: 15px;
+    background-color:rgb(236 246 255);
+    height: 202px;
+    width: 285px;
+}
+    
+#services .box img{
+    height: 119px;
+    width: 204px;
+    display: block;
+    margin: auto;
+    padding: 3px;
+    margin: 5px;
+}
+
+#services .box p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+    
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('https://media.istockphoto.com/id/1421080285/photo/colored-books-on-light-background-education-school.webp?b=1&s=612x612&w=0&k=20&c=Vgx3CaE8DeTqKi-hs_EhfSGU0PD2ax8cAfXJH3KOOU8=');
+    width:100%;
+    height:200%;
+    z-index:-1;
+    opacity:0.4;
+}
+#clients img{
+    height: 90px;
+
+}
+
+.client-item{
+    padding:34px;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('https://media.istockphoto.com/id/1134202009/photo/newspaper-with-old-grunge-vintage-unreadable-paper-texture-background.webp?b=1&s=170667a&w=0&k=20&c=C0Vda5m0MeFdAHu_0cuq_VctCZ2jYK22JfS_pN5xg0Q=') no-repeat center center/cover ;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 26px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 44%;
+    padding: -7.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#contact-box form{
+    width:47%;
+    height:25%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    padding: -21px;
+    width: 29px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(47, 48, 49);
+}
+footer{
+    background: black;
+    color: azure;
+    padding: 9px 19px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* about section  */
+
+#about{
+    display: flex;
+    flex-direction: row;
+    padding: 103px 202px;
+    height: 122px;
+    justify-content: center;
+    align-items: center;
+    background:url('https://cdn.pixabay.com/photo/2018/04/18/15/04/literature-3330647_1280.jpg');
+}
+
+
+.heading{
+    font-size: 2.2rem;
+    color:aliceblue;
+    padding: -16px;
+    justify-content: left;
+    align-items: left;
+    justify-items: left;
+    margin: 23px;
+    top: 800px;
+    width: 273px;
+    height: 94px;
+    text-align: left;
+}
+
+.head2{
+    color:cornsilk;
+    font-size: 1.2rem;
+    padding: 51px;
+    border: 2px solid bisque;
+    margin: 68px;
+    top: 800px;
+    width: 373px;
+    }
+
+    body{
+        background-color: #f6faff;
+    }
